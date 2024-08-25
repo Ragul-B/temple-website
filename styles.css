@@ -321,6 +321,11 @@ footer p {
 }
 /* Responsive Design */
 @media (max-width: 768px) {
+.header-right{
+  top: 2px;
+  right: 2px;
+  font-size: 12px;
+}
   .temple-name {
       font-size: 2rem;
   }
