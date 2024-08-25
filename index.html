@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ta">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Dharmasastha Ayyappa Swamy Temple</title>
+    <link rel="shortcut icon" href="images/website.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="temple-header">
+            <img src="images/ayyappa.png" alt="Temple Image" class="temple-header-image">
+            <div>
+                <div class="temple-name">ஸ்ரீ தர்மசாஸ்தா ஐயப்ப ஸ்வாமி கோவில் - பாலூர்</div>
+                <p>சாஸ்தா புரம், ஆர்.பட்டி, பாலூர், தாலுகா, மாதனூர் - ஒடுகத்தூர் சாலை, ஆம்பூர், தமிழ்நாடு 635804</p>
+            </div>
+        </div>
+        <div class="header-right">
+            <div id="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </div>
+    </header>
+    
+
+    <!-- Hamburger Menu -->
+    <div id="hamburger-menu">
+        <span id="hamburger-close" onclick="toggleMenu()">&times;</span>
+        <ul>
+            <li><a href="index.html">முகப்பு</a></li>
+            <li><a href="history.html">வரலாறு</a></li>
+            <li><a href="temple-images.html">கோவில் படங்கள்</a></li>
+            <li><a href="contact.html">தொடர்பு கொள்ளவும்</a></li>
+        </ul>
+    </div>
+
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="images/Slide 1.jpg" alt="Slide 1">
+        </div>
+        <div class="slide">
+            <img src="images/Slide1.jpg" alt="Slide 2">
+        </div>
+        <div class="slide">
+            <img src="images/Slide2.jpg" alt="Slide 3">
+        </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="button-section">
+        <a href="pooja-time.html" class="animated-button" style="background-color: rgb(111, 111, 32);">பூஜை நேரம்</a>
+        <a href="festival-details.html" class="animated-button" style="background-color: rgb(234, 169, 100);">திருவிழா விவரங்கள்</a> 
+        <a href="donation.html" class="animated-button" style="background-color: rgb(241, 187, 86);">நன்கொடை</a>
+        <a href="360-view.html" class="animated-button" style="background-color: rgb(111, 242, 157);">360 காட்சி</a>
+    </div>
+
+    <!-- About Section -->
+    <div class="about-section">
+        <h1>கோவில் பற்றி</h1>
+        <img src="images/td.jpeg" alt="God Image">
+        <p>பக்தர்கள் தங்கள் பிரார்த்தனைகளை நிறைவேற்றவும், அய்யப்பன் அருள் பெறவும் அமைதியான சூழலை இந்த ஆலயம் வழங்குகிறது.
+             இந்த கோவில் தென்னிந்திய பாரம்பரிய கட்டிடக்கலை பாணியை பின்பற்றுகிறது மற்றும் சிக்கலான சிற்பங்கள் மற்றும் சிற்பங்களை கொண்டுள்ளது.</p>
+        <a href="#" id="see-more-btn" onclick="toggleMore()" >மேலும் காண</a>
+    </div>
+
+    <!-- Popup Card for See More -->
+    <div id="more-text" class="popup-card">
+        <div class="popup-content">
+            <img src="images/Ayyappan-5.jpg" alt="kk k" srcset="" style="float: right; width: 200px; height: auto; box-sizing: border-box;">
+            <span class="close" onclick="toggleMore()">&times;</span>
+            <h3>கோவிலின் விரிவான வரலாறு</h3>
+            <p>இக்கோயில் ஸ்தாபனத்தின் உன்னத வரலாற்றைப் பெற்றுள்ளது. ஆரம்ப கட்டத்தில், குறிப்பாக 1995 ஆம் ஆண்டில் சில பக்தர்கள் பஜனைகள் மூலம் எளிய வழிபாட்டில் பூஜைப் பாடலைத் தொடங்கினர்.
+                பாரம்பரிய மண்டல பூஜையின் போது "அய்யப்பன் விளக்கு பூஜை"யை தொடங்கினர். பின்னர் சபரி மலை யாத்திரையை தொடங்கினர். இந்த வழக்கம் முறையாக ஒழுங்குபடுத்தப்பட்டு, ஒவ்வொரு ஆண்டும் தொடர்ந்து வந்தது. 
+                தென்னிந்தியாவின் பெரிய நகரங்களில் ஒன்று சென்னை. ஸ்ரீ ஐயப்ப சுவாமி கோவில் நகரின் நடுப்பகுதியில் அமைந்துள்ளது.
+                இரண்டாவது சபரி மாலையாக இக்கோவிலை போற்றுவதில் பக்தர்கள் பெருமை கொள்கின்றனர். சித்தாபுதூர் ஐயப்ப சுவாமி கோவில் மிகவும் பிரசித்தி பெற்ற கோவிலாகும். மற்ற மாநிலங்களில் இருந்து வரும் பக்தர்கள், அவர்கள் சபரிமலை யாத்திரையை புனித மாலை மற்றும் "விர்த்தா" (நடைமுறை உணவு கட்டுப்பாடுகள்) மூலம் தொடங்குகின்றனர். 
+             தங்கள் யாத்திரையின் போது, ​​அவர்கள் சித்தாபுதூர் ஸ்ரீ ஐயப்ப ஸ்வாமி கோவிலுக்குச் சென்று ஓய்வெடுக்கிறார்கள். பின்னர் அவர்கள் யாத்திரையைத் தொடர்கிறார்கள். இந்தியா முழுவதிலுமிருந்து வரும் பக்தர்களுக்கு ஓய்வெடுப்பதற்கான நடுநிலையமாக இந்தக் கோயில் கருதப்படுகிறது. இந்த இடம் தூய்மை மற்றும் தெய்வீகத்தன்மைக்கு பெயர் பெற்றது.</p>
+            <p>வேலூரில் உள்ள ஐயப்பன் கோயில் ஐயப்பன் அல்லது ஸ்ரீ தர்ம சாஸ்தா என்றும் அழைக்கப்படும் ஐயப்பனுக்கு அர்ப்பணிக்கப்பட்ட பிரபலமான வழிபாட்டுத் தலமாகும். நகரின் நடுப்பகுதியில் அமைந்துள்ள ஸ்ரீ ஐயப்ப சுவாமி கோவில், இரண்டாவது சபரி மாலை என போற்றப்படுவதை பக்தர்கள் பெருமையாக கருதுகின்றனர். சித்தாபுதூர் ஐயப்ப சுவாமி கோவில் மிகவும் பிரசித்தி பெற்ற கோவிலாகும்.
+
+                பக்தர்கள் தங்கள் பிரார்த்தனைகளை நிறைவேற்றவும், அய்யப்பன் அருள் பெறவும் அமைதியான சூழலை இந்த ஆலயம் வழங்குகிறது. இந்த கோவில் தென்னிந்திய பாரம்பரிய கட்டிடக்கலை பாணியை பின்பற்றுகிறது மற்றும் சிக்கலான சிற்பங்கள் மற்றும் சிற்பங்களை கொண்டுள்ளது.
+                
+                வேலூர் அய்யப்பன் கோவிலுக்கு வரும் பக்தர்கள் தீபம் ஏற்றுதல், பூக்கள் சமர்ப்பித்தல், பிரார்த்தனைகள் உள்ளிட்ட பல்வேறு சடங்குகள் மற்றும் விழாக்களில் பங்கேற்கின்றனர். மகர விளக்கு, மண்டல பூஜை போன்ற முக்கிய திருவிழாக்களும் இந்த கோவிலில் மிகவும் உற்சாகமாக கொண்டாடப்படுகிறது.</p>
+            <p>இங்கு பல முக்கிய நிகழ்வுகள் நடைபெற்றுள்ளன...</p>
+        </div>
+    </div>
+
+    <!-- Image Gallery -->
+    <div class="gallery-section">
+        <h2>கோவில் படங்கள்</h2>
+        <div class="gallery">
+            <img src="images/IMG_20240825_135228.jpg" alt="Temple 1" onclick="openLightbox(); currentSlide(1)">
+            <img src="images/Ayyappan-1-850x1024-1.jpg" alt="Temple 2" onclick="openLightbox(); currentSlide(2)">
+            <img src="images/IMG_20240825_135144.jpg" alt="Temple 3" onclick="openLightbox(); currentSlide(3)">
+        </div>
+        
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <div class="lightbox-slide">
+                <img src="images/IMG_20240825_135228.jpg" alt="Temple 1">
+            </div>
+            <div class="lightbox-slide">
+                <img src="images/Ayyappan-1-850x1024-1.jpg" alt="Temple 2">
+            </div>
+            <div class="lightbox-slide">
+                <img src="images/IMG_20240825_135144.jpg" alt="Temple 3">
+            </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <section id="nearby-places">
+        <h2>Nearby Places to Visit</h2>
+        <div class="places-container">
+            <div class="place">
+                <a href="https://maps.app.goo.gl/uq6iyuN1KzNLTWBY9"><img src="images/WhatsApp-Image-2023-06-13-at-5.10.34-PM-1536x686.jpeg" alt="Place 1"></a>
+                <h3>ஸ்ரீ கங்கை அம்மன் கோவில் - பாலூர்</h3>
+                
+            </div>
+            <div class="place">
+                <a href="https://maps.app.goo.gl/jqE7ZNjYCY3V3xuaA"><img src="images/n2.jpeg" alt="Place 2"></a>
+                <h3>விநாயகர் கோவில் - பாலூர்</h3>
+            </div>
+
+            <div class="place">
+                <a href="https://maps.app.goo.gl/KDMUtgeUtXPuZJR69"><img src="images/n3.jpeg" alt="Place 2"></a>
+                <h3>ஸ்ரீ தர்மகொண்டராஜா திருமலை திருக்கோவில் - திருமலைகுப்பம் RF</h3>
+            </div>
+            <!-- Add more places similarly -->
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>ஸ்ரீ தர்மசாஸ்தா ஐயப்ப ஸ்வாமி கோவில்</p>
+        <p>தர்மசாஸ்தா புரம், ஆர்.பட்டி, பாலூர்...</p>
+        <p>தொலைபேசி: 99418 62728 | மின்னஞ்சல்: dharmasasthapuram@gmail.com</p>
+
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>

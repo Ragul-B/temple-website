@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    table.festival-table {
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: center;
+    border: 2px solid #4CAF50;
+}
+
+table.festival-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+table.festival-table td {
+    padding: 8px;
+    border: 1px solid #4CAF50;
+}
+
+table.festival-table tr:hover {
+    background-color: #d9f2d9;
+}
+
+/* Additional Animation */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+table.festival-table {
+    animation: bounceIn 0.8s ease;
+}
+
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <h1>திருவிழா விவரங்கள்</h1>
+    </header>
+    <main>
+        <table class="festival-table">
+            <tr>
+                <th>S.No</th>
+                <th>திருவிழா தேதி</th>
+                <th>திருவிழாவின் பெயர்</th>
+                <th>திருவிழா விவரங்கள்</th>
+                <th>திருவிழா நேரம்</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>14-Jan</td>
+                <td>Pongal</td>
+                <td>Traditional Harvest Festival</td>
+                <td>6:00 AM - 12:00 PM</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>20-Dec</td>
+                <td>Mandalapuja</td>
+                <td>Special Abhishekam and offerings</td>
+                <td>5:00 AM - 7:30 AM</td>
+            </tr>
+        </table>
+    </main>
+</body>
+
+</html>
