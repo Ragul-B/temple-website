@@ -58,7 +58,28 @@
             }
 
             table.festival-table {
-                min-width: 600px; /* Ensures the table does not shrink beyond its content */
+                font-size: 0.8rem; /* Reduce font size */
+                padding: 4px; /* Reduce padding */
+            }
+
+            table.festival-table th, table.festival-table td {
+                padding: 4px; /* Reduce padding for cells */
+            }
+        }
+
+        /* Extra small screen adjustments */
+        @media screen and (max-width: 400px) {
+            table.festival-table {
+                font-size: 0.7rem; /* Further reduce font size */
+            }
+
+            table.festival-table th, table.festival-table td {
+                padding: 2px; /* Further reduce padding for cells */
+            }
+
+            .festival-table-wrapper {
+                /* Optionally adjust wrapper padding */
+                padding: 0 10px;
             }
         }
     </style>
