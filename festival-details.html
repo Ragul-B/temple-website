@@ -5,32 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Festival Details</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
         table.festival-table {
-            margin: 20px 0;
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
             font-size: 1rem;
             text-align: center;
-            border: 2px solid #4CAF50;
-            width: 100%;
             border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
         }
 
         table.festival-table th {
             background-color: #4CAF50;
             color: white;
             font-weight: bold;
+            padding: 15px 10px;
         }
 
         table.festival-table td {
-            padding: 8px;
-            border: 1px solid #4CAF50;
+            padding: 12px 10px;
+            border-bottom: 1px solid #dddddd;
         }
 
         table.festival-table tr:hover {
-            background-color: #d9f2d9;
+            background-color: #f1f1f1;
         }
 
-        /* Additional Animation */
+        table.festival-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Animation */
         @keyframes bounceIn {
             0% {
                 transform: scale(0.9);
@@ -52,66 +85,55 @@
             animation: bounceIn 0.8s ease;
         }
 
-        /* Responsive Styles */
-        @media screen and (max-width: 768px) {
-            table.festival-table {
-                font-size: 0.9rem;
-            }
-        }
-
-        @media screen and (max-width: 576px) {
-            table.festival-table {
-                font-size: 0.8rem;
-            }
-
+        /* Responsive Design */
+        @media (max-width: 768px) {
             table.festival-table,
-            table.festival-table thead,
-            table.festival-table tbody,
-            table.festival-table th,
-            table.festival-table td,
-            table.festival-table tr {
+            thead,
+            tbody,
+            th,
+            td,
+            tr {
                 display: block;
+                width: 100%;
             }
 
-            table.festival-table tr {
+            thead {
+                display: none;
+            }
+
+            tr {
                 margin-bottom: 15px;
+                border: 1px solid #4CAF50;
+                padding: 10px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             }
 
-            table.festival-table td,
-            table.festival-table th {
+            td {
                 text-align: left;
                 padding-left: 50%;
                 position: relative;
+                border: none;
+                border-bottom: 1px solid #dddddd;
             }
 
-            table.festival-table td::before,
-            table.festival-table th::before {
+            td::before {
                 content: attr(data-label);
                 position: absolute;
                 left: 10px;
                 font-weight: bold;
-                text-align: left;
-            }
-
-            table.festival-table th {
-                background-color: transparent;
+                text-transform: uppercase;
                 color: #4CAF50;
             }
 
-            table.festival-table th::before {
-                display: none;
-            }
-
-            table.festival-table td {
-                text-align: right;
-                padding-left: 50%;
+            td:last-child {
+                border-bottom: 0;
             }
         }
     </style>
 </head>
 
 <body>
-    <header>
+    <header class="head">
         <h1>திருவிழா விவரங்கள்</h1>
     </header>
     <main>
