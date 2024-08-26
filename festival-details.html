@@ -5,31 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Festival Details</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header.head {
-            text-align: center;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        main {
-            padding: 20px;
-        }
-
         table.festival-table {
-            width: 100%;
             margin: 20px 0;
             font-size: 1rem;
             text-align: center;
             border: 2px solid #4CAF50;
+            width: 100%;
             border-collapse: collapse;
         }
 
@@ -37,7 +19,6 @@
             background-color: #4CAF50;
             color: white;
             font-weight: bold;
-            padding: 10px;
         }
 
         table.festival-table td {
@@ -55,10 +36,12 @@
                 transform: scale(0.9);
                 opacity: 0;
             }
+
             50% {
                 transform: scale(1.05);
                 opacity: 0.8;
             }
+
             100% {
                 transform: scale(1);
                 opacity: 1;
@@ -69,91 +52,95 @@
             animation: bounceIn 0.8s ease;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
             table.festival-table {
                 font-size: 0.9rem;
             }
-
-            table.festival-table th, table.festival-table td {
-                padding: 6px;
-            }
         }
 
-        @media (max-width: 576px) {
-            table.festival-table th, table.festival-table td {
-                padding: 4px;
-                font-size: 0.85rem;
+        @media screen and (max-width: 576px) {
+            table.festival-table {
+                font-size: 0.8rem;
             }
 
-            table.festival-table th {
-                font-size: 1rem;
-            }
-        }
-
-        /* For very small screens, stack the data */
-        @media (max-width: 480px) {
-            table.festival-table, table.festival-table th, table.festival-table td {
+            table.festival-table,
+            table.festival-table thead,
+            table.festival-table tbody,
+            table.festival-table th,
+            table.festival-table td,
+            table.festival-table tr {
                 display: block;
-                width: 100%;
-                text-align: left;
             }
 
             table.festival-table tr {
                 margin-bottom: 15px;
-                border-bottom: 1px solid #4CAF50;
+            }
+
+            table.festival-table td,
+            table.festival-table th {
+                text-align: left;
+                padding-left: 50%;
+                position: relative;
+            }
+
+            table.festival-table td::before,
+            table.festival-table th::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                font-weight: bold;
+                text-align: left;
             }
 
             table.festival-table th {
-                background-color: #4CAF50;
-                color: white;
-                padding: 8px;
+                background-color: transparent;
+                color: #4CAF50;
+            }
+
+            table.festival-table th::before {
+                display: none;
             }
 
             table.festival-table td {
-                padding: 8px 10px;
-                text-align: left;
-                border: none;
-            }
-
-            table.festival-table td::before {
-                content: attr(data-label);
-                font-weight: bold;
-                display: inline-block;
-                margin-right: 10px;
-                color: #4CAF50;
+                text-align: right;
+                padding-left: 50%;
             }
         }
     </style>
 </head>
 
 <body>
-    <header class="head">
+    <header>
         <h1>திருவிழா விவரங்கள்</h1>
     </header>
     <main>
         <table class="festival-table">
-            <tr>
-                <th>S.No</th>
-                <th>திருவிழா தேதி</th>
-                <th>திருவிழாவின் பெயர்</th>
-                <th>திருவிழா விவரங்கள்</th>
-                <th>திருவிழா நேரம்</th>
-            </tr>
-            <tr>
-                <td data-label="S.No">1</td>
-                <td data-label="திருவிழா தேதி">14-Jan</td>
-                <td data-label="திருவிழாவின் பெயர்">Pongal</td>
-                <td data-label="திருவிழா விவரங்கள்">Traditional Harvest Festival</td>
-                <td data-label="திருவிழா நேரம்">6:00 AM - 12:00 PM</td>
-            </tr>
-            <tr>
-                <td data-label="S.No">2</td>
-                <td data-label="திருவிழா தேதி">20-Dec</td>
-                <td data-label="திருவிழாவின் பெயர்">Mandalapuja</td>
-                <td data-label="திருவிழா விவரங்கள்">Special Abhishekam and offerings</td>
-                <td data-label="திருவிழா நேரம்">5:00 AM - 7:30 AM</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>திருவிழா தேதி</th>
+                    <th>திருவிழாவின் பெயர்</th>
+                    <th>திருவிழா விவரங்கள்</th>
+                    <th>திருவிழா நேரம்</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="S.No">1</td>
+                    <td data-label="திருவிழா தேதி">14-Jan</td>
+                    <td data-label="திருவிழாவின் பெயர்">Pongal</td>
+                    <td data-label="திருவிழா விவரங்கள்">Traditional Harvest Festival</td>
+                    <td data-label="திருவிழா நேரம்">6:00 AM - 12:00 PM</td>
+                </tr>
+                <tr>
+                    <td data-label="S.No">2</td>
+                    <td data-label="திருவிழா தேதி">20-Dec</td>
+                    <td data-label="திருவிழாவின் பெயர்">Mandalapuja</td>
+                    <td data-label="திருவிழா விவரங்கள்">Special Abhishekam and offerings</td>
+                    <td data-label="திருவிழா நேரம்">5:00 AM - 7:30 AM</td>
+                </tr>
+            </tbody>
         </table>
     </main>
 </body>
