@@ -303,6 +303,8 @@ header {
   .header-right{
     top: 2px;
     right: 2px;
+    margin-right: 10px;
+    margin-top: 10px;
     font-size: 12px;
 }
   .temple-name {
@@ -570,10 +572,6 @@ header.scrolled {
         padding: 8px;
         font-size: 12px; /* Adjust font size */
     }
-  
-    .header-right {
-      margin-right: 10px;
-      margin-top: 10px;
       
     }
     .popup-content .close {
@@ -677,7 +675,7 @@ header.scrolled {
 
   .temple-header-image {
       width: 120px;
-     margin-left: 200px;
+     
   }
 
   .temple-name {
