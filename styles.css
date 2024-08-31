@@ -721,8 +721,6 @@ header.scrolled {
   }
 
   .header-right {
-    margin-left: 20px;
-    margin-top: 25px;
     background: (255, 255, 255, 0);
     backdrop-filter: blur(-5px);
     border: 2px solid rgb(173, 198, 230);
