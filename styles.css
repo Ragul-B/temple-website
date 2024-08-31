@@ -604,6 +604,8 @@ header.scrolled {
     }
     .header-right {
       margin-right: 10px;
+      margin-top: 10px;
+      
     }
     .popup-content .close {
         font-size: 18px;
