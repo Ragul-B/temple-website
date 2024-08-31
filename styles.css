@@ -30,6 +30,8 @@ header {
   position: absolute;
   top: 10px;
   right: 10px;
+  background-color: rgb(93, 166, 249);
+  width: 50px;
 }
 
 .top-bar-btn {
@@ -600,7 +602,9 @@ header.scrolled {
         padding: 8px;
         font-size: 12px; /* Adjust font size */
     }
-
+    .header-right {
+      margin-right: 10px;
+    }
     .popup-content .close {
         font-size: 18px;
     }
