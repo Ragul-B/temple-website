@@ -30,7 +30,10 @@ header {
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: rgb(93, 166, 249);
+  background: (255, 255, 255, 0); 
+  backdrop-filter: blur(-5px);
+  border: 2px solid rgb(56, 133, 228);
+  border-radius: 5px;
   width: 50px;
 }
 
@@ -304,7 +307,7 @@ header {
     top: 2px;
     right: 2px;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 12px;
 }
   .temple-name {
