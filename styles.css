@@ -32,9 +32,10 @@ header {
   right: 10px;
   background: (255, 255, 255, 0); 
   backdrop-filter: blur(-5px);
-  border: 2px solid rgb(56, 133, 228);
+  border: 3px solid rgb(173, 198, 230);
   border-radius: 5px;
   width: 50px;
+  height: auto;
 }
 
 .top-bar-btn {
@@ -306,7 +307,7 @@ header {
   .header-right{
     top: 2px;
     right: 2px;
-    margin-right: 10px;
+    margin-right: 5px;
     margin-top: 5px;
     font-size: 12px;
 }
@@ -707,4 +708,65 @@ header.scrolled {
       font-size: 18px;
   }
 
+}
+
+@media (max-width: 1200px) {
+  /* Adjust header and content layout */
+  header {
+    padding: 15px 10px;
+  }
+
+  .temple-name {
+    font-size: 2rem;
+  }
+
+  .header-right {
+    top: 5px;
+    right: 5px;
+    background: (255, 255, 255, 0);
+    backdrop-filter: blur(-5px);
+    border: 3px solid rgb(173, 198, 230);
+    border-radius: 5px;
+  }
+
+  .animated-button {
+    padding: 10px 20px;
+  }
+
+  .about-section {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  
+  .temple-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .temple-header-image {
+    width: 150px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .button-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popup-content {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .popup-content .close {
+    font-size: 18px;
+  }
 }
