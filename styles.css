@@ -660,6 +660,10 @@ header.scrolled {
 }
 
 
+.header-right {
+  position: absolute;
+  right: 10px;
+  top: 20px;
 }
 
 /* Responsive Code */
