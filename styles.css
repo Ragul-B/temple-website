@@ -278,38 +278,6 @@ header {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Footer Styles */
-footer {
-  background-color: #34495e;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  margin-top: 50px;
-}
-
-footer p {
-  margin: 5px 0;
-}
-
-.social-links {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.social-links a {
-  margin: 0 10px;
-  transition: transform 0.3s;
-}
-
-.social-links img {
-  width: 30px;
-  height: 30px;
-}
-
-.social-links a:hover {
-  transform: scale(1.2);
-}
 
 /* Zoom Controls */
 .zoom-btn {
@@ -714,9 +682,7 @@ header.scrolled {
       font-size: 20px;
   }
 
-  .header-right {
-      right: 5px;
-      top: 10px;
+
   }
 }
 
@@ -734,9 +700,36 @@ header.scrolled {
   .temple-name {
       font-size: 18px;
   }
+  
+  footer {
+    padding: 20px 10px;
+    text-align: center;
+  }
 
-  .header-right {
-      right: 5px;
-      top: 5px;
+  footer h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+  footer div {
+    margin-top: 15px;
+  }
+
+  footer a img {
+    width: 20px;
+    margin: 0 5px;
+  }
+
+  footer button {
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  footer button img {
+    width: 18px;
   }
 }
