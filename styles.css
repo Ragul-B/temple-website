@@ -700,36 +700,5 @@ header.scrolled {
   .temple-name {
       font-size: 18px;
   }
-  
-  footer {
-    padding: 20px 10px;
-    text-align: center;
-  }
 
-  footer h2 {
-    font-size: 18px;
-    margin-bottom: 15px;
-  }
-
-  footer p {
-    font-size: 12px;
-  }
-
-  footer div {
-    margin-top: 15px;
-  }
-
-  footer a img {
-    width: 20px;
-    margin: 0 5px;
-  }
-
-  footer button {
-    padding: 10px;
-    border-radius: 50%;
-  }
-
-  footer button img {
-    width: 18px;
-  }
 }
