@@ -30,7 +30,8 @@ header {
   position: absolute;
   top: 10px;
   right: 10px;
-  background: rgb(165, 136, 136); 
+  background: rgb(105,142,181);
+  background: linear-gradient(90deg, rgba(105,142,181,1) 29%, rgba(19,11,54,1) 98%);
   border: 2px solid rgb(173, 198, 230);
   border-radius: 5px;
   width: 50px;
