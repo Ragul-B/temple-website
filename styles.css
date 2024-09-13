@@ -109,18 +109,40 @@ header {
 }
 
 .slide {
-  display: none;
-  animation: fadeIn 1.5s ease-in-out;
+  transform: translateX(-100%) scale(0.9); /* Off-screen to the left and slightly scaled down */
+  opacity: 0; /* Fully transparent */
+  background-color: #3498db; /* Initial color (blue) */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Initial soft shadow */
+  animation: slideInBounce 2s ease-out forwards; /* Smooth, professional animation */
 }
 
-@keyframes fadeIn {
-  from {
-      opacity: 0;
+@keyframes slideInBounce {
+  0% {
+    transform: translateX(-100%) scale(0.9); /* Start off-screen and scaled down */
+    opacity: 0; /* Fully transparent */
+    background-color: #3498db; /* Initial color */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Initial shadow */
   }
-  to {
-      opacity: 1;
+  50% {
+    transform: translateX(10%) scale(1.05); /* Overshoot slightly with scaling */
+    opacity: 0.6; /* Semi-transparent */
+    background-color: #2ecc71; /* Transition color (green) */
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+  }
+  70% {
+    transform: translateX(-5%) scale(0.95); /* Small bounce back with scaling */
+    opacity: 0.8; /* More visible */
+    background-color: #e74c3c; /* Color changes to red */
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+  }
+  100% {
+    transform: translateX(0) scale(1); /* Final position and scale */
+    opacity: 1; /* Fully opaque */
+    background-color: #3498db; /* Final color (blue) */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); /* Final soft shadow */
   }
 }
+
 
 /* Animated Buttons */
 .animated-button {
