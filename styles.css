@@ -334,7 +334,7 @@ header {
     font-size: 12px;
 }
   .temple-name {
-      font-size: 20px;
+      font-size: 2rem;
   }
 
   .about-section img {
@@ -588,6 +588,10 @@ header.scrolled {
     .popup-content .close {
         font-size: 20px;
     }
+   .temple-name{
+     font-size: 20px;
+   }
+  
 }
 
 /* Responsive Styles for Mobile Devices */
@@ -603,6 +607,9 @@ header.scrolled {
     .popup-content .close {
         font-size: 18px;
     }
+    .temple-name{
+     font-size: 20px;
+   }
 }
 
 
