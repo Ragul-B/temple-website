@@ -698,9 +698,7 @@ header.scrolled {
   right: 10px;
   top: 20px;
 }
-.temple-name {
-  font-size: 15px;
-}
+
 
 /* Responsive Code */
 @media (max-width: 768px) {
@@ -717,12 +715,7 @@ header.scrolled {
      
   }
 
-  .temple-name {
-      font-size: 15px;
-  }
-
-
-  }
+  
 }
 
 @media (max-width: 480px) {
@@ -734,10 +727,6 @@ header.scrolled {
   .temple-header-image {
       width: 100px;
       height: 70px;
-  }
-
-  .temple-name {
-      font-size: 18px;
   }
 
 }
