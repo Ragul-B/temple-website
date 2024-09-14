@@ -87,16 +87,39 @@
         </div>
     </div>
 
-    <!-- Image Gallery -->
+<!-- Image Gallery -->
     <div class="gallery-section">
         <h2>கோவில் படங்கள்</h2>
-        <div class="gallery">
-            <img src="images/IMG_20240825_135228.jpg" alt="Temple 1" onclick="openLightbox(); currentSlide(1)">
-            <img src="images/Ayyappan-1-850x1024-1.jpg" alt="Temple 2" onclick="openLightbox(); currentSlide(2)">
-            <img src="images/IMG_20240825_135144.jpg" alt="Temple 3" onclick="openLightbox(); currentSlide(3)">
+        <div class="gallery" style="text-align: center; margin-bottom: 20px;">
+            <img src="images/IMG_20240825_135228.jpg" alt="Temple 1" onclick="openLightbox(); currentSlide(1)" style="max-width: 30%; margin: 10px; cursor: pointer; border-radius: 8px;">
+            <img src="images/Ayyappan-1-850x1024-1.jpg" alt="Temple 2" onclick="openLightbox(); currentSlide(2)" style="max-width: 30%; margin: 10px; cursor: pointer; border-radius: 8px;">
+            <img src="images/IMG_20240825_135144.jpg" alt="Temple 3" onclick="openLightbox(); currentSlide(3)" style="max-width: 30%; margin: 10px; cursor: pointer; border-radius: 8px;">
+            <img src="images/IMG_20240825_134948.jpg" alt="Temple 3" onclick="openLightbox(); currentSlide(4)" style="max-width: 30%; margin: 10px; cursor: pointer; border-radius: 8px;">
         </div>
         
-    </div>
+        <!-- Centering the button with a modern look -->
+        <div style="text-align: center;">
+            <a href="temple-images.html">
+                <button style="
+                    padding: 14px 20px;
+                    margin-bottom: 10px;
+                    font-size: 10px;
+                    font-weight: bold;
+                    color: #fff;
+                    background-color: #469057;
+                    border: 2px solid transparent;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    transition: all 0.4s ease;
+                    letter-spacing: 1px;
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                "
+                onmouseover="this.style.backgroundColor='#218838'; this.style.boxShadow='0 12px 24px rgba(0, 0, 0, 0.3)'; this.style.transform='translateY(-3px)';" 
+                onmouseout="this.style.backgroundColor='#28a745'; this.style.boxShadow='0 8px 16px rgba(0, 0, 0, 0.2)'; this.style.transform='translateY(0)';">
+                See More
+                </button>
+            </a>
+        </div>
 
     <!-- Lightbox -->
     <div id="lightbox" class="lightbox">
