@@ -347,6 +347,11 @@ header {
   #menu-icon {
       font-size: 25px;
   }
+  .gallery-section {
+    font-size: 20px;
+    text-align: center;
+
+  }
 
   .gallery img {
       width: 100%;
@@ -608,6 +613,10 @@ header.scrolled {
     .temple-name {
      font-size: 20px;
    }
+    .gallery-section {
+    font-size: 25px;
+    text-align: center;
+  }
 }
 
 
